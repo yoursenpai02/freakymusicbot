@@ -207,5 +207,5 @@ class App(Client):
                 )
                 sys.exit()
             LOGGER(__name__).info(
-                f"🎄 ᴀssɪsᴛᴀɴᴛ 5 sᴛᴀʀᴛᴇᴅ 🌿 ᴀs {self.one.name} ✨...
+                f"🎄 ᴀssɪsᴛᴀɴᴛ 5 sᴛᴀʀᴛᴇᴅ 🌿 ᴀs {self.one.name} ✨..."
             )
