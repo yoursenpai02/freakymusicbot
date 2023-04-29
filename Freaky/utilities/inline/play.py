@@ -10,8 +10,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                        "💥 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩 💞", url=f"{SUPPORT_GROUP}"
-            )
+                                    "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
+                        )
         ],
     ]
     return buttons

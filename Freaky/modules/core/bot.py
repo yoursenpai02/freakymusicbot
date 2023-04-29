@@ -37,7 +37,7 @@ class Bot(Client):
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
-                "❄️ ᴘʟᴇᴀsᴇ ᴘʀᴏᴍᴏᴛᴇ  ʙᴏᴛ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ✨️..."
+                "🥀 𝐏𝐥𝐞𝐚𝐬𝐞, 𝐀𝐭 𝐅𝐢𝐫𝐬𝐭 𝐀𝐝𝐝 𝐁𝐨𝐭 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐋𝐨𝐠 𝐆𝐫𝐨𝐮𝐩 𝐀𝐧𝐝 𝐌𝐚𝐤𝐞 𝐀𝐧 𝐀𝐝𝐦𝐢𝐧 🌷..."
             )
             sys.exit()
         LOGGER(__name__).info(f"━━━━━━━━━━━━━━━━━━━\n❄️ʙᴏᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ✨️\n━━━━━━━━━━━━━━━━━━━\n❤️ ɴᴀᴍᴇ › {self.one.name}\n🌸 ʟɪɴᴋ › @{self.one.username}\n📝 ɪᴅ › {self.one.id}\n━━━━━━━━━━━━━━━━━━━\n[ᴄʜᴧᴍᴘᴜ](https://t.me/ll_Champu_ll).\n━━━━━━━━━━━━━━━━━━━")
