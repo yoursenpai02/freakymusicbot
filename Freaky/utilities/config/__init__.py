@@ -1,0 +1,3 @@
+#ChampuPlayer
+
+from .config import *

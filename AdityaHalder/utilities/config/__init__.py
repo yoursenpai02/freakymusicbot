@@ -1,3 +1,0 @@
-#AdityaPlayer
-
-from .config import *
