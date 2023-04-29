@@ -1,5 +1,3 @@
-# Powered By @Freaky
-
 import os
 import re
 import sys
@@ -31,7 +29,7 @@ OWNER_ID = list(map(int, getenv("OWNER_ID", None).split()))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/shivanshhu/adityamusic")
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Champu")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "aditya")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ll_Champu_ll")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Freaky_Support")
@@ -43,7 +41,7 @@ AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/Freaky")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/ChampuXD")
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))

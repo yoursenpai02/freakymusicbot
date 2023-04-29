@@ -1,5 +1,3 @@
-# Champu Halder
-
 from typing import Dict, List, Union
 
 from Freaky.modules.core.adb import mongodb

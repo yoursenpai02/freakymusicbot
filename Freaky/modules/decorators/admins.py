@@ -1,5 +1,3 @@
-# Champu Halder
-
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from Freaky import bot

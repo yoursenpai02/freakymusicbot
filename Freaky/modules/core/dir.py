@@ -1,5 +1,3 @@
-# Champu Halder
-
 import os
 import sys
 from os import listdir, mkdir

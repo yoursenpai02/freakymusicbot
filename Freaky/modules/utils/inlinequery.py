@@ -1,5 +1,3 @@
-# Freaky
-
 from pyrogram.types import (InlineQueryResultArticle,
                             InputTextMessageContent)
 

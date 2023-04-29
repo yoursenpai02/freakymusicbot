@@ -1,5 +1,3 @@
-# Champu Halder
-
 from Freaky.utilities import config
 from Freaky.utilities.config import PRIVATE_BOT_MODE
 from Freaky.modules.core.adb import mongodb
