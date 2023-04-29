@@ -174,7 +174,7 @@ class App(Client):
                 )
                 sys.exit()
             LOGGER(__name__).info(
-                f"🎄 ᴀssɪsᴛᴀɴᴛ 4  sᴛᴀʀᴛᴇᴅ 🌿 ᴀs {self.one.name} ✨...
+                f"🎄 ᴀssɪsᴛᴀɴᴛ 4  sᴛᴀʀᴛᴇᴅ 🌿 ᴀs {self.one.name} ✨..."
             )
         if config.STRING5:
             await self.five.start()
