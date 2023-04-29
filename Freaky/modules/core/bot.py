@@ -31,7 +31,7 @@ class Bot(Client):
             )
         except:
             LOGGER(__name__).error(
-                "❄️ ᴘʟᴇᴀsᴇ,  ғɪʀsᴛ ᴀᴅᴅ ᴍᴜsɪᴄ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀɴ ᴀᴅᴍɪɴ ✨️..."
+                "❄️ ᴘʟᴇᴀsᴇ ғɪʀsᴛ ᴀᴅᴅ ᴍᴜsɪᴄ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀɴ ᴀᴅᴍɪɴ ✨️..."
             )
             sys.exit()
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
