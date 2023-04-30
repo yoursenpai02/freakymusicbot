@@ -193,11 +193,11 @@ def auth_users_markup(_, status: Union[bool, str] = None):
         ],
         [
             InlineKeyboardButton(
-                text="⬅️ 𝐁𝐚𝐜𝐤",
+                text="◁ ʙᴀᴄᴋ",
                 callback_data="settingsback_helper",
             ),
             InlineKeyboardButton(
-                text="❌ 𝐂𝐥𝐨𝐬𝐞", callback_data="close"
+                text="🇽 ᴄʟᴏsᴇ", callback_data="close"
             ),
         ],
     ]
