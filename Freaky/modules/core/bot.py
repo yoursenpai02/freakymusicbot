@@ -1,7 +1,7 @@
 import sys
 from pyrogram import Client
-from AdityaHalder.utilities import config
-from AdityaHalder.console import LOGGER
+from Freaky.utilities import config
+from Freaky.console import LOGGER
 
 
 class Bot(Client):
