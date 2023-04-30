@@ -59,8 +59,8 @@ def PlayWrapper(command):
                 if "stream" in message.command:
                     return await message.reply_text(_["str_1"])
                 buttons = botplaylist_markup(_)
-                return await message.reply_text("**🤖 𝐆𝐢𝐯𝐞 🙃 𝐒𝐨𝐦𝐞 💿 𝐐𝐮𝐞𝐫𝐲 😍\n💞 𝐓𝐨 🔊 𝐏𝐥𝐚𝐲 🥀 𝐒𝐨𝐧𝐠 🌷...**",
-                )
+                return await message.reply_text("❄️ ɢɪᴠᴇ sᴏᴍᴇ ǫᴜᴇʀʏ 😍\n💞 ᴛᴏ ᴘʟᴀʏ sᴏɴɢ✨️...",
+                                )
         if message.sender_chat:
             upl = InlineKeyboardMarkup(
                 [
