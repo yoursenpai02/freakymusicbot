@@ -40,9 +40,9 @@ def stream_markup(_, videoid, chat_id):
 def telegram_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton((
+            InlineKeyboardButton(
                                                 "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
-                                    ))
+                                    )
         ],
     ]
     return buttons
