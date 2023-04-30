@@ -69,7 +69,7 @@ class App(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🎃ᴀssɪsᴛᴀɴᴛ ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀 ..."💞 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀"
                 )
                 sys.exit()
             LOGGER(__name__).info(
@@ -102,7 +102,7 @@ class App(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🎃ᴀssɪsᴛᴀɴᴛ 2 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀 . 💞 ..."💞 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ 2 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀"
                 )
                 sys.exit()
             LOGGER(__name__).info(
@@ -135,7 +135,7 @@ class App(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🎃ᴀssɪsᴛᴀɴᴛ 3 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀 . 💞 💞 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ 3 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀"
                 )
                 sys.exit()
             LOGGER(__name__).info(
@@ -168,7 +168,7 @@ class App(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🎃ᴀssɪsᴛᴀɴᴛ 4 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ 4 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀"
                 )
                 sys.exit()
             LOGGER(__name__).info(

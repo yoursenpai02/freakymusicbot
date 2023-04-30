@@ -42,7 +42,7 @@ def git():
         UPSTREAM_REPO = config.UPSTREAM_REPO
     try:
         repo = Repo()
-        LOGGER(__name__).info(f"🎉 ɢɪᴛ ᴄʟɪᴇɴᴛ ғᴏᴜɴᴅ❗[𝐕𝐏𝐒 𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐑] ❤️‍🔥")
+        LOGGER(__name__).info(f"🎉 ɢɪᴛ ᴄʟɪᴇɴᴛ ғᴏᴜɴᴅ❗[𝐕𝐏𝐒 𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐑] ")
     except GitCommandError:
         LOGGER(__name__).info(f"❄️ ɪɴᴠᴀʟɪᴅ ɢɪᴛ ᴄᴏᴍᴍᴀɴᴅ ✨️")
     except InvalidGitRepositoryError:
