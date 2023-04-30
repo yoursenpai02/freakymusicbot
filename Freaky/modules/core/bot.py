@@ -6,9 +6,9 @@ from Freaky.console import LOGGER
 
 class Bot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"❄️ sᴛᴀʀᴛɪɴɢ ʏᴏᴜʀ ʙᴏᴛ ✨️...")
+        LOGGER(__name__).info(f"🥀 𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭 💞...")
         super().__init__(
-            "ChampuPlayer",
+            "AdityaPlayer",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -31,13 +31,13 @@ class Bot(Client):
             )
         except:
             LOGGER(__name__).error(
-              f"❄️ ᴘʟᴇᴀsᴇ, ғɪʀsᴛ ᴀᴅᴅ ᴍᴜsɪᴄ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀɴ ᴀᴅᴍɪɴ ✨️"
+                "🥀 𝐏𝐥𝐞𝐚𝐬𝐞, 𝐀𝐭 𝐅𝐢𝐫𝐬𝐭 𝐀𝐝𝐝 𝐁𝐨𝐭 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐋𝐨𝐠 𝐆𝐫𝐨𝐮𝐩 𝐀𝐧𝐝 𝐌𝐚𝐤𝐞 𝐀𝐧 𝐀𝐝𝐦𝐢𝐧 🌷..."
             )
             sys.exit()
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
-              f"❄️ ᴘʟᴇᴀsᴇ, ᴘʀᴏᴍᴏᴛᴇ  ʙᴏᴛ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ✨️"
+              "❄️ ᴘʟᴇᴀsᴇ ᴘʀᴏᴍᴏᴛᴇ  ʙᴏᴛ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ✨️..."
             )
             sys.exit()
         LOGGER(__name__).info(f"━━━━━━━━━━━━━━━━━━━\n❄️ʙᴏᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ✨️\n━━━━━━━━━━━━━━━━━━━\n❤️ ɴᴀᴍᴇ › {self.one.name}\n🌸 ʟɪɴᴋ › @{self.one.username}\n📝 ɪᴅ › {self.one.id}\n━━━━━━━━━━━━━━━━━━━\n[ᴄʜᴧᴍᴘᴜ](https://t.me/ll_Champu_ll).\n━━━━━━━━━━━━━━━━━━━")
