@@ -8,7 +8,7 @@ class Bot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"❄️ sᴛᴀʀᴛɪɴɢ ʏᴏᴜʀ ʙᴏᴛ ✨️...")
         super().__init__(
-            "AdityaPlayer",
+            "ChampuPlayer",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
