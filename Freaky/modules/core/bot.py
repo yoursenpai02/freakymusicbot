@@ -31,13 +31,13 @@ class Bot(Client):
             )
         except:
             LOGGER(__name__).error(
-              "❄️ ᴘʟᴇᴀsᴇ, ғɪʀsᴛ ᴀᴅᴅ ᴍᴜsɪᴄ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀɴ ᴀᴅᴍɪɴ ✨️"
+              f"❄️ ᴘʟᴇᴀsᴇ, ғɪʀsᴛ ᴀᴅᴅ ᴍᴜsɪᴄ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀɴ ᴀᴅᴍɪɴ ✨️"
             )
             sys.exit()
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
-              "❄️ ᴘʟᴇᴀsᴇ, ᴘʀᴏᴍᴏᴛᴇ  ʙᴏᴛ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ✨️"
+              f"❄️ ᴘʟᴇᴀsᴇ, ᴘʀᴏᴍᴏᴛᴇ  ʙᴏᴛ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ✨️"
             )
             sys.exit()
         LOGGER(__name__).info(f"━━━━━━━━━━━━━━━━━━━\n❄️ʙᴏᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ✨️\n━━━━━━━━━━━━━━━━━━━\n❤️ ɴᴀᴍᴇ › {self.one.name}\n🌸 ʟɪɴᴋ › @{self.one.username}\n📝 ɪᴅ › {self.one.id}\n━━━━━━━━━━━━━━━━━━━\n[ᴄʜᴧᴍᴘᴜ](https://t.me/ll_Champu_ll).\n━━━━━━━━━━━━━━━━━━━")
