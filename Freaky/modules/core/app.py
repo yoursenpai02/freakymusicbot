@@ -1,5 +1,3 @@
-# Aditya Halder
-
 import sys
 from pyrogram import Client
 from Freaky.utilities import config
@@ -43,7 +41,7 @@ class App(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"🥀 𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐂𝐥𝐢𝐞𝐧𝐭𝐬 🌷...")
+        LOGGER(__name__).info(f"❄️ sᴛᴀʀᴛᴇᴅ ᴀssɪsᴛᴀɴᴛ ᴄʟɪᴇɴᴛs ✨️")
         if config.STRING1:
             await self.one.start()
             get_me = await self.one.get_me()
@@ -57,25 +55,25 @@ class App(Client):
             else:
                 self.one.name = get_me.first_name
             try:
-                await self.one.join_chat("kaalware")
-                await self.one.join_chat("adityaserver")
-                await self.one.join_chat("adityadiscus")
+                await self.one.join_chat("TheShivanshu")
+                await self.one.join_chat("ll_Champu_ll")
+                await self.one.join_chat("Chatting_Club_Indian_Friends")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
                     config.LOG_GROUP_ID,
-                    f"**━━━━━━━━━━━━━━━━━━━**\n**✅ 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟏 𝐇𝐚𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🥳**\n**━━━━━━━━━━━━━━━━━━━**\n**🥀 𝐍𝐚𝐦𝐞 ›** {self.one.name}\n**🌸 𝐋𝐢𝐧𝐤 : ›** @{self.one.username}\n**🌷 𝐈𝐃✩ : ›** `{self.one.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**🔥 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 : [𝐀𝐝𝐢𝐭𝐲𝐚 𝐒𝐞𝐫𝐯𝐞𝐫](https://t.me/adityaserver).**\n**━━━━━━━━━━━━━━━━━━━**",
+                    f"**━━━━━━━━━━━━━━━━━━━**\n**❄️ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ✨️**\n**━━━━━━━━━━━━━━━━━━━**\n**❤️ ɴᴀᴍᴇ ›** {self.one.name}\n**🌸 ʟɪɴᴋ ›** @{self.one.username}\n**📝 ɪᴅ ›** `{self.one.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**[ᴄʜᴧᴍᴘᴜ](https://t.me/ll_Champu_ll).**\n**━━━━━━━━━━━━━━━━━━━**",
                   disable_web_page_preview=True
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🥀𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟏 𝐅𝐚𝐢𝐥𝐞𝐝 𝐓𝐨 𝐀𝐜𝐜𝐞𝐬𝐬\n𝐋𝐨𝐠'𝐬 𝐆𝐫𝐨𝐮𝐩 ✨ ...\n\n🌷 𝐏𝐥𝐞𝐚𝐬𝐞 𝐀𝐝𝐝 𝐚𝐧𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐬\n𝐀𝐧 𝐀𝐝𝐦𝐢𝐧 💞 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀 ..."💞 ..."
                 )
                 sys.exit()
             LOGGER(__name__).info(
-                f"🥀 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟏 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🌿 𝐀𝐬 {self.one.name} ✨..."
+                f"🎄 ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ 🌿 ᴀs{self.one.name} ✨..."
             )
         if config.STRING2:
             await self.two.start()
@@ -90,25 +88,25 @@ class App(Client):
             else:
                 self.two.name = get_me.first_name
             try:
-                await self.two.join_chat("kaalware")
-                await self.two.join_chat("adityaserver")
-                await self.two.join_chat("adityadiscus")
+                await self.two.join_chat("TheShivanshu")
+                await self.two.join_chat("ll_Champu_ll")
+                await self.two.join_chat("Chatting_Club_Indian_Friends")
             except:
                 pass
             assistants.append(2)
             try:
                 await self.two.send_message(
                     config.LOG_GROUP_ID,
-                    f"**━━━━━━━━━━━━━━━━━━━**\n**✅ 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟐 𝐇𝐚𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🥳**\n**━━━━━━━━━━━━━━━━━━━**\n**🥀 𝐍𝐚𝐦𝐞 ›** {self.two.name}\n**🌸 𝐋𝐢𝐧𝐤 : ›** @{self.two.username}\n**🌷 𝐈𝐃✩ : ›** `{self.two.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**🔥 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 : [𝐀𝐝𝐢𝐭𝐲𝐚 𝐒𝐞𝐫𝐯𝐞𝐫](https://t.me/adityaserver).**\n**━━━━━━━━━━━━━━━━━━━**",
+                    f"**━━━━━━━━━━━━━━━━━━━**\n**❄️ᴀssɪsᴛᴀɴᴛ 2 sᴛᴀʀᴛᴇᴅ✨️**\n**━━━━━━━━━━━━━━━━━━━**\n**❤️ ɴᴀᴍᴇ ›** {self.one.name}\n**🌸 ʟɪɴᴋ ›** @{self.one.username}\n**📝 ɪᴅ ›** `{self.one.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**[ᴄʜᴧᴍᴘᴜ](https://t.me/ll_Champu_ll).**\n**━━━━━━━━━━━━━━━━━━━**",
                   disable_web_page_preview=True
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🥀𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟐 𝐅𝐚𝐢𝐥𝐞𝐝 𝐓𝐨 𝐀𝐜𝐜𝐞𝐬𝐬\n𝐋𝐨𝐠'𝐬 𝐆𝐫𝐨𝐮𝐩 ✨ ...\n\n🌷 𝐏𝐥𝐞𝐚𝐬𝐞 𝐀𝐝𝐝 𝐚𝐧𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐬\n𝐀𝐧 𝐀𝐝𝐦𝐢𝐧 💞 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ 2 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀 . 💞 ..."💞 ..."
                 )
                 sys.exit()
             LOGGER(__name__).info(
-                f"🥀 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟐 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🌿 𝐀𝐬 {self.two.name} ✨..."
+                f"🎄 ᴀssɪsᴛᴀɴᴛ 2 sᴛᴀʀᴛᴇᴅ 🌿 ᴀs {self.two.name} ✨..."
             )
         if config.STRING3:
             await self.three.start()
@@ -123,25 +121,25 @@ class App(Client):
             else:
                 self.three.name = get_me.first_name
             try:
-                await self.three.join_chat("kaalware")
-                await self.three.join_chat("adityaserver")
-                await self.three.join_chat("adityadiscus")
+                await self.three.join_chat("TheShivanshu")
+                await self.three.join_chat("ll_Champu_ll")
+                await self.three.join_chat("Chatting_Club_Indian_Friends")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
                     config.LOG_GROUP_ID,
-                    f"**━━━━━━━━━━━━━━━━━━━**\n**✅ 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟑 𝐇𝐚𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🥳**\n**━━━━━━━━━━━━━━━━━━━**\n**🥀 𝐍𝐚𝐦𝐞 ›** {self.three.name}\n**🌸 𝐋𝐢𝐧𝐤 : ›** @{self.three.username}\n**🌷 𝐈𝐃✩ : ›** `{self.three.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**🔥 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 : [𝐀𝐝𝐢𝐭𝐲𝐚 𝐒𝐞𝐫𝐯𝐞𝐫](https://t.me/adityaserver).**\n**━━━━━━━━━━━━━━━━━━━**",
+                    f"**━━━━━━━━━━━━━━━━━━━**\n**❄️ᴀssɪsᴛᴀɴᴛ 3 sᴛᴀʀᴛᴇᴅ✨️**\n**━━━━━━━━━━━━━━━━━━━**\n**❤️ ɴᴀᴍᴇ ›** {self.one.name}\n**🌸 ʟɪɴᴋ ›** @{self.one.username}\n**📝 ɪᴅ ›** `{self.one.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**[ᴄʜᴧᴍᴘᴜ](https://t.me/ll_Champu_ll).**\n**━━━━━━━━━━━━━━━━━━━**",
                   disable_web_page_preview=True
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🥀𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟑 𝐅𝐚𝐢𝐥𝐞𝐝 𝐓𝐨 𝐀𝐜𝐜𝐞𝐬𝐬\n𝐋𝐨𝐠'𝐬 𝐆𝐫𝐨𝐮𝐩 ✨ ...\n\n🌷 𝐏𝐥𝐞𝐚𝐬𝐞 𝐀𝐝𝐝 𝐚𝐧𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐬\n𝐀𝐧 𝐀𝐝𝐦𝐢𝐧 💞 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ 3 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀 . 💞 💞 ..."
                 )
                 sys.exit()
             LOGGER(__name__).info(
-                f"🥀 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟑 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🌿 𝐀𝐬 {self.three.name} ✨..."
+                f"🎄 ᴀssɪsᴛᴀɴᴛ 3 sᴛᴀʀᴛᴇᴅ 🌿 ᴀs {self.three.name} ✨..."
             )
         if config.STRING4:
             await self.four.start()
@@ -156,25 +154,25 @@ class App(Client):
             else:
                 self.four.name = get_me.first_name
             try:
-                await self.four.join_chat("kaalware")
-                await self.four.join_chat("adityaserver")
-                await self.four.join_chat("adityadiscus")
+                await self.four.join_chat("TheShivanshu")
+                await self.four.join_chat("ll_Champu_ll")
+                await self.four.join_chat("Chatting_Club_Indian_Friends")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
                     config.LOG_GROUP_ID,
-                    f"**━━━━━━━━━━━━━━━━━━━**\n**✅ 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟒 𝐇𝐚𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🥳**\n**━━━━━━━━━━━━━━━━━━━**\n**🥀 𝐍𝐚𝐦𝐞 ›** {self.four.name}\n**🌸 𝐋𝐢𝐧𝐤 : ›** @{self.four.username}\n**🌷 𝐈𝐃✩ : ›** `{self.four.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**🔥 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 : [𝐀𝐝𝐢𝐭𝐲𝐚 𝐒𝐞𝐫𝐯𝐞𝐫](https://t.me/adityaserver).**\n**━━━━━━━━━━━━━━━━━━━**",
+                    f"**━━━━━━━━━━━━━━━━━━━**\n**❄️ᴀssɪsᴛᴀɴᴛ  4 sᴛᴀʀᴛᴇᴅ✨️**\n**━━━━━━━━━━━━━━━━━━━**\n**❤️ ɴᴀᴍᴇ ›** {self.one.name}\n**🌸 ʟɪɴᴋ ›** @{self.one.username}\n**📝 ɪᴅ ›** `{self.one.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**[ᴄʜᴧᴍᴘᴜ](https://t.me/ll_Champu_ll).**\n**━━━━━━━━━━━━━━━━━━━**",
                   disable_web_page_preview=True
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🥀𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟒 𝐅𝐚𝐢𝐥𝐞𝐝 𝐓𝐨 𝐀𝐜𝐜𝐞𝐬𝐬\n𝐋𝐨𝐠'𝐬 𝐆𝐫𝐨𝐮𝐩 ✨ ...\n\n🌷 𝐏𝐥𝐞𝐚𝐬𝐞 𝐀𝐝𝐝 𝐚𝐧𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐬\n𝐀𝐧 𝐀𝐝𝐦𝐢𝐧 💞 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ 4 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀 ..."
                 )
                 sys.exit()
             LOGGER(__name__).info(
-                f"🥀 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟒 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🌿 𝐀𝐬 {self.four.name} ✨..."
+                f"🎄 ᴀssɪsᴛᴀɴᴛ 4  sᴛᴀʀᴛᴇᴅ 🌿 ᴀs  {self.four.name} ✨..."
             )
         if config.STRING5:
             await self.five.start()
@@ -189,23 +187,23 @@ class App(Client):
             else:
                 self.five.name = get_me.first_name
             try:
-                await self.five.join_chat("kaalware")
-                await self.five.join_chat("adityaserver")
-                await self.five.join_chat("adityadiscus")
+                await self.five.join_chat("TheShivanshu")
+                await self.five.join_chat("ll_Champu_ll")
+                await self.five.join_chat("Chatting_Club_Indian_Friends")
             except:
                 pass
             assistants.append(5)
             try:
                 await self.five.send_message(
                     config.LOG_GROUP_ID,
-                    f"**━━━━━━━━━━━━━━━━━━━**\n**✅ 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟓 𝐇𝐚𝐬 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🥳**\n**━━━━━━━━━━━━━━━━━━━**\n**🥀 𝐍𝐚𝐦𝐞 ›** {self.one.name}\n**🌸 𝐋𝐢𝐧𝐤 : ›** @{self.one.username}\n**🌷 𝐈𝐃✩ : ›** `{self.one.id}`\n━━━━━━━━━━━━━━━━━━━\n**🔥 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 : [𝐀𝐝𝐢𝐭𝐲𝐚 𝐒𝐞𝐫𝐯𝐞𝐫](https://t.me/adityaserver).**\n**━━━━━━━━━━━━━━━━━━━**",
+                    f"**━━━━━━━━━━━━━━━━━━━**\n**❄️ᴀssɪsᴛᴀɴᴛ 5 sᴛᴀʀᴛᴇᴅ✨️**\n**━━━━━━━━━━━━━━━━━━━**\n**❤️ ɴᴀᴍᴇ ›** {self.one.name}\n**🌸 ʟɪɴᴋ ›** @{self.one.username}\n**📝 ɪᴅ ›** `{self.one.id}`\n**━━━━━━━━━━━━━━━━━━━**\n**[ᴄʜᴧᴍᴘᴜ](https://t.me/ll_Champu_ll).**\n**━━━━━━━━━━━━━━━━━━━**",
                   disable_web_page_preview=True
                 )
             except:
                 LOGGER(__name__).error(
-                    f"🥀𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟓 𝐅𝐚𝐢𝐥𝐞𝐝 𝐓𝐨 𝐀𝐜𝐜𝐞𝐬𝐬\n𝐋𝐨𝐠'𝐬 𝐆𝐫𝐨𝐮𝐩 ✨ ...\n\n🌷 𝐏𝐥𝐞𝐚𝐬𝐞 𝐀𝐝𝐝 𝐚𝐧𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐬\n𝐀𝐧 𝐀𝐝𝐦𝐢𝐧 💞 ..."
+                    f"🎃ᴀssɪsᴛᴀɴᴛ 5 ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss\nʟᴏɢ's ɢʀᴏᴜᴘ✨️ ...\n\n❄️ᴘʟᴇᴀsᴇ ᴀᴅᴅ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs\nᴀɴ ᴀᴅᴍɪɴ🎀"
                 )
                 sys.exit()
             LOGGER(__name__).info(
-                f"🥀 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝟓 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 🌿 𝐀𝐬 {self.five.name} ✨..."
+                f"🎄 ᴀssɪsᴛᴀɴᴛ 5 sᴛᴀʀᴛᴇᴅ 🌿 ᴀs {self.five.name} ✨..."
             )
