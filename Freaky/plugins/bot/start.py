@@ -24,6 +24,38 @@ from Freaky.utilities.inline import (help_pannel, private_panel, private_panelx,
 
 loop = asyncio.get_running_loop()
 
+PH_ON = ["https://te.legra.ph/file/e37357b824b33e799ce43.mp4",
+"https://te.legra.ph/file/d9b843b151305ce80423e.mp4",
+"https://te.legra.ph/file/48a67e54eefd53858754d.mp4",
+"https://te.legra.ph/file/1efc93298684f609f242e.mp4",
+"https://te.legra.ph/file/92a6ce8dcfeb1488bddf9.mp4",
+"https://te.legra.ph/file/321253a6d4b6130c1bb6b.mp4",
+"https://te.legra.ph/file/93feb690d082905046d79.mp4",
+"https://te.legra.ph/file/ef3c365e8c0a89a5f45a0.mp4",
+"https://te.legra.ph/file/e7a619bafdb316150c6ba.mp4",
+"https://te.legra.ph/file/4d30fe0a69ce798f2116c.mp4",
+"https://te.legra.ph/file/e146a1d583a5c2a8f705c.mp4",
+"https://te.legra.ph/file/53bec2a6870a4503f282b.mp4",
+"https://te.legra.ph/file/275e5a7e49012d6627c4d.mp4",
+"https://te.legra.ph/file/e2454f93c77e4517f016a.mp4",
+"https://te.legra.ph/file/58bee071c435075e8700c.mp4",
+"https://te.legra.ph/file/e1019f75dce3db323e36a.mp4",
+"https://te.legra.ph/file/3389155926ec29f06146c.mp4",
+"https://te.legra.ph/file/ffa7f69e7f4d64e318f2a.mp4",
+"https://te.legra.ph/file/94670e91fd133fa365493.mp4",
+"https://te.legra.ph/file/7513f63a007765b42f89f.mp4",
+"https://te.legra.ph/file/a686111e3490e64eaf009.mp4",
+"https://te.legra.ph/file/8ae83126705f7471a8724.mp4"]
+
+STKR = ["CAACAgUAAxkBAAECX3VkFpDLAyTxl1Bg5cBtoNkt38xm8gACIQoAAkCj8Fdxa8YvGPC9ny8E",
+"CAACAgUAAxkBAAECX3hkFpDULnQNeJVzc9DiJUd6tX22VwACZQgAAj3k-Vfsu_WmA6PiUy8E",
+"CAACAgUAAxkBAAECX3tkFpDda2eQTIsx5IA_ia5WtaKVegACPgkAAuTa-Vd1OleMVkKXJC8E",
+"CAACAgUAAxkBAAECX35kFpDtX_HGxsV07ryGuAWTahLzKAAC5QYAAn2oGFRhYu_MJFdcoi8E",
+"CAACAgUAAxkBAAECX4FkFpD-Ql3t0WyEKkikIhj5Lu85OQACvQsAAtFrGVSfowXjyPZUdS8E",
+"CAACAgUAAxkBAAECX4RkFpEHNA8g-HYtG4lWqSJEQztrSgACYQgAAt1i-Ff86o6jaBiyrS8E",
+"CAACAgUAAxkBAAECX4dkFpEPPEjJBgvGHyiHkNnFntSBEwACYQsAApw68Veq2du-LNgCiS8E",
+"CAACAgUAAxkBAAECX4xkFpEr_W34ps64OrdIrKX0Ffn4-QACiwgAAiFzGVQu-0euwPNspS8E"]
+
 
 @bot.on_message(
     filters.command(get_command("START_COMMAND"))
@@ -178,55 +210,40 @@ async def start_comm(client, message: Message, _):
                 )
     else:
         try:
-            await bot.resolve_peer(OWNER_ID[0])
+            await app.resolve_peer(OWNER_ID[0])
             OWNER = OWNER_ID[0]
         except:
             OWNER = None
-        out = private_panel(_, bot.username, OWNER)
-        outx = private_panelx(_, bot.username, OWNER)
+        out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
-                await message.reply_photo(
-                    photo=config.START_IMG_URL,
-                    caption=_["start_8"].format(
+                OMFOO = random.choice(PH_ON)
+                await message.reply_sticker(random.choice(STKR))
+                await message.reply_video(
+                    video=OMFOO,
+                    caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
-                    reply_markup=InlineKeyboardMarkup(outx),
+                    reply_markup=InlineKeyboardMarkup(out),
                 )
             except:
                 await message.reply_text(
                     _["start_2"].format(config.MUSIC_BOT_NAME),
                     reply_markup=InlineKeyboardMarkup(out),
-                 disable_web_page_preview=True
                 )
         else:
             await message.reply_text(
                 _["start_2"].format(config.MUSIC_BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(out),
-             disable_web_page_preview=True
             )
         if await is_on_off(config.LOG):
             sender_id = message.from_user.id
             sender_name = message.from_user.first_name
-            if message.from_user.username:
-                user_name = f"@{message.from_user.username}"
-            else:
-                user_name = "{message.from_user.mention}"
-            return await bot.send_photo(
+            return await app.send_message(
                 config.LOG_GROUP_ID,
-                photo=f"https://te.legra.ph/file/fc1149f435ab50e83076c.jpg",
-                caption=f"""
-**━━━━━━━━━━━━━━━━━━━**
-**💥 𝐀𝐧 𝐔𝐬𝐞𝐫 𝐇𝐚𝐬 ❥︎ 𝐉𝐮𝐬𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝**
-**𝐘𝐨𝐮𝐫 🌿 𝐌𝐮𝐬𝐢𝐜 🎸 𝐁𝐨𝐭 ✨ ...**
-**━━━━━━━━━━━━━━━━━━━**
-**🥀 𝐍𝐚𝐦𝐞 ›** {sender_name}
-**🌸 𝐋𝐢𝐧𝐤 : ›** {user_name}
-**🌷 𝐈𝐃ఌ︎: »** `{message.from_user.id}`
-**━━━━━━━━━━━━━━━━━━━**
-**💐 𝐓𝐡𝐞𝐬𝐞 𝐀𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧'𝐬 𝐎𝐟**
-**𝐖𝐡𝐨 🍁 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 ఌ︎ 𝐁𝐨𝐭 💞 ...**
-**━━━━━━━━━━━━━━━━━━━**""")
+                f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ʏᴏᴜʀ ʙᴏᴛ.\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
+            )
+
 
 
 @bot.on_message(
@@ -237,9 +254,12 @@ async def start_comm(client, message: Message, _):
 )
 @LanguageStart
 async def testbot(client, message: Message, _):
-    out = start_pannel(_)
-    return await message.reply_text(
-        _["start_1"].format(
+    OMFOO = random.choice(PH_ON)
+    OWNER = OWNER_ID[0]
+    out = start_pannel(_, app.username, OWNER)
+    return await message.reply_photo(
+               photo=config.START_IMG_URL,
+               caption=_["start_1"].format(
             message.chat.title, config.MUSIC_BOT_NAME
         ),
         reply_markup=InlineKeyboardMarkup(out),
