@@ -20,7 +20,7 @@ def setting_markup(_):
                 text="🎩ᴀᴜᴛʜ ᴜsᴇʀs", callback_data="AU"
             ),
             InlineKeyboardButton(
-                text="ғʀᴇᴧᴋʏ", url=f"https://t.me/Freaky"
+                text="𝐂𝐡𝐚𝐦𝐩𝐮𝐗𝐃", url=f"https://t.me/Freaky"
             ),
         ],
         [

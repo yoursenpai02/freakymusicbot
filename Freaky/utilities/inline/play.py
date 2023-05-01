@@ -9,6 +9,9 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                                     "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
+                        ),
+            InlineKeyboardButton(
+                                    "●  ᴄʜᴧᴍᴘᴜ ●", url=f"https//t.me/TheShivanshu"
                         )
         ],
     ]
@@ -20,7 +23,10 @@ def telegram_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                                                 "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
-                                    )
+                                    ),
+            InlineKeyboardButton(
+                                    "●  ᴄʜᴧᴍᴘᴜ ●", url=f"https//t.me/TheShivanshu"
+                        )
         ],
     ]
     return buttons
@@ -31,7 +37,10 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                                                 "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
-                                    )
+                                    ),
+            InlineKeyboardButton(
+                                    "●  ᴄʜᴧᴍᴘᴜ ●", url=f"https//t.me/TheShivanshu"
+                        )
         ],
     ]
     return buttons
@@ -42,7 +51,10 @@ def telegram_markup(_, chat_id):
         [
             InlineKeyboardButton(
                                                 "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
-                                    )
+                                    ),
+            InlineKeyboardButton(
+                                    "●  ᴄʜᴧᴍᴘᴜ ●", url=f"https//t.me/TheShivanshu"
+                        
         ],
     ]
     return buttons
