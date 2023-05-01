@@ -187,7 +187,7 @@ async def start_comm(client, message: Message, _):
         if config.START_IMG_URL:
             try:
                 await message.reply_photo(
-                    photo=(url=f"https://te.legra.ph/file/66a6f653897ebe83f48f7.jpg"),
+                    url=f"https://te.legra.ph/file/66a6f653897ebe83f48f7.jpg"),
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
