@@ -89,7 +89,7 @@ LOG_FILE_NAME = "Champulogs.txt"
 
 
 # All Images Of Champu Player // @Freaky
-START_IMG_URL = getenv("START_IMG_URL", f"https://te.legra.ph/file/c6e1041c6c9a12913f57a.png")
+START_IMG_URL = getenv("START_IMG_URL", f"https://te.legra.ph/file/fc1149f435ab50e83076c.jpg")
 PING_IMG_URL = getenv("PING_IMG_URL", "Freaky/resource/ping.jpeg")
 PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "Freaky/resource/playlist.jpeg")
 GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "Freaky/resource/global.jpeg")

@@ -24,6 +24,28 @@ from Freaky.utilities.inline import (help_pannel, private_panel, private_panelx,
 
 loop = asyncio.get_running_loop()
 
+PH_ON = ["https://te.legra.ph/file/e37357b824b33e799ce43.mp4",
+"https://te.legra.ph/file/d9b843b151305ce80423e.mp4",
+"https://te.legra.ph/file/48a67e54eefd53858754d.mp4",
+"https://te.legra.ph/file/1efc93298684f609f242e.mp4",
+"https://te.legra.ph/file/92a6ce8dcfeb1488bddf9.mp4",
+"https://te.legra.ph/file/321253a6d4b6130c1bb6b.mp4",
+"https://te.legra.ph/file/93feb690d082905046d79.mp4",
+"https://te.legra.ph/file/ef3c365e8c0a89a5f45a0.mp4",
+"https://te.legra.ph/file/e7a619bafdb316150c6ba.mp4",
+"https://te.legra.ph/file/4d30fe0a69ce798f2116c.mp4",
+"https://te.legra.ph/file/e146a1d583a5c2a8f705c.mp4",
+"https://te.legra.ph/file/53bec2a6870a4503f282b.mp4",
+"https://te.legra.ph/file/275e5a7e49012d6627c4d.mp4",
+"https://te.legra.ph/file/e2454f93c77e4517f016a.mp4",
+"https://te.legra.ph/file/58bee071c435075e8700c.mp4",
+"https://te.legra.ph/file/e1019f75dce3db323e36a.mp4",
+"https://te.legra.ph/file/3389155926ec29f06146c.mp4",
+"https://te.legra.ph/file/ffa7f69e7f4d64e318f2a.mp4",
+"https://te.legra.ph/file/94670e91fd133fa365493.mp4",
+"https://te.legra.ph/file/7513f63a007765b42f89f.mp4",
+"https://te.legra.ph/file/a686111e3490e64eaf009.mp4",
+"https://te.legra.ph/file/8ae83126705f7471a8724.mp4"]
 
 @bot.on_message(
     filters.command(get_command("START_COMMAND"))
@@ -186,8 +208,9 @@ async def start_comm(client, message: Message, _):
         outx = private_panelx(_, bot.username, OWNER)
         if config.START_IMG_URL:
             try:
-                await message.reply_photo(
-                    photo=config.START_IMG_URL,
+              OMFOO = random.choice(PH_ON)
+                await message.reply_video(
+                    video=OMFOO,
                     caption=_["start_8"].format(
                         config.MUSIC_BOT_NAME
                     ),
@@ -214,7 +237,7 @@ async def start_comm(client, message: Message, _):
                 user_name = "{message.from_user.mention}"
             return await bot.send_photo(
                 config.LOG_GROUP_ID,
-                photo=f"https://te.legra.ph/file/c6e1041c6c9a12913f57a.png",
+                photo=f"https://te.legra.ph/file/fc1149f435ab50e83076c.jpg",
                 caption=f"""
 **━━━━━━━━━━━━━━━━━━━**
 **💥 𝐀𝐧 𝐔𝐬𝐞𝐫 𝐇𝐚𝐬 ❥︎ 𝐉𝐮𝐬𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝**
