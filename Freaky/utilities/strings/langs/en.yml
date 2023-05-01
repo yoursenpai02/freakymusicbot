@@ -441,10 +441,9 @@ gban_8 : "**ᴜɴɢʙᴀɴɴɪɴɢ {0}**\n\nᴇxᴩᴇᴄᴛᴇᴅ ᴛɪᴍᴇ :
 gban_9 : "**ᴜɴɢʙᴀɴɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ**\n\nᴜɴʙᴀɴɴᴇᴅ **{0}** ɪɴ **{1}** ᴄʜᴀᴛs."
 gban_10 : "ɴᴏ ᴏɴᴇ ɪs ɢʙᴀɴɴᴇᴅ."
 gban_11 : "ɢᴇᴛᴛɪɴɢ ɢʙᴀɴɴᴇᴅ ᴜsᴇʀs ʟɪsᴛ..."
-𝐬𝐭 ✨ ...**"
 
 #Suggestions
-sug_0 : "❓**Do You Know?**\n\n✅ "
+sug_0 : "❓**Do You Know?**\n\n✅"
 sug_1 : "You can play music in two **search modes** i.e. Direct Mode and Inline Mode.\n\nChange modes via /playmode"
 sug_2 : "You can play music in two **play types** i.e. Everyone Mode and Admins Mode.\n\nChange modes via /playmode"
 sug_3 : "You can play music in **channels** too.\n\nSet channel_id via /channelplay and play via /cplay "
