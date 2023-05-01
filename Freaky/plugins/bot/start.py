@@ -5,22 +5,22 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 from youtubesearchpython.__future__ import VideosSearch
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.config.config import OWNER_ID
-from AdityaHalder.utilities.strings import get_command, get_string
-from AdityaHalder import Telegram, YouTube, bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.plugins.play.playlist import del_plist_msg
-from AdityaHalder.plugins.sudo.sudoers import sudoers_list
-from AdityaHalder.modules.database import (add_served_chat,
+from Freaky.utilities import config
+from Freaky.utilities.config import BANNED_USERS
+from Freaky.utilities.config.config import OWNER_ID
+from Freaky.utilities.strings import get_command, get_string
+from Freaky import Telegram, YouTube, bot
+from Freaky.misc import SUDOERS
+from Freaky.plugins.play.playlist import del_plist_msg
+from Freaky.plugins.sudo.sudoers import sudoers_list
+from Freaky.modules.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from AdityaHalder.modules.decorators.language import LanguageStart
-from AdityaHalder.utilities.inline import (help_pannel, private_panel, private_panelx, start_pannel)
+from Freaky.modules.decorators.language import LanguageStart
+from Freaky.utilities.inline import (help_pannel, private_panel, private_panelx, start_pannel)
 
 loop = asyncio.get_running_loop()
 
