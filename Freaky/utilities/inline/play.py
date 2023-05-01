@@ -8,10 +8,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                                    "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
-                        ),
-            InlineKeyboardButton(
-                                    "●  ᴄʜᴧᴍᴘᴜ ●", url=f"https//t.me/TheShivanshu"
+                                    "● 𝐂𝐎𝐌𝐄 𝐇𝐄𝐑𝐄 ●", url=f"{SUPPORT_GROUP}"
                         )
         ],
     ]
@@ -22,11 +19,8 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                                                "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
-                                    ),
-            InlineKeyboardButton(
-                                    "●  ᴄʜᴧᴍᴘᴜ ●", url=f"https//t.me/TheShivanshu"
-                        )
+                                                "● 𝐂𝐎𝐌𝐄 𝐇𝐄𝐑𝐄 ●", url=f"{SUPPORT_GROUP}"
+                                    )
         ],
     ]
     return buttons
@@ -36,11 +30,8 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                                                "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
-                                    ),
-            InlineKeyboardButton(
-                                    "●  ᴄʜᴧᴍᴘᴜ ●", url=f"https//t.me/TheShivanshu"
-                        )
+                                                "● 𝐂𝐎𝐌𝐄 𝐇𝐄𝐑𝐄 ●", url=f"{SUPPORT_GROUP}"
+                                    )
         ],
     ]
     return buttons
@@ -50,11 +41,8 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                                                "● 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠 𝐂𝐥𝐮𝐛 ●", url=f"{SUPPORT_GROUP}"
-                                    ),
-            InlineKeyboardButton(
-                                    "●  ᴄʜᴧᴍᴘᴜ ●", url=f"https//t.me/TheShivanshu"
-                      )
+                                                "● 𝐂𝐎𝐌𝐄 𝐇𝐄𝐑𝐄 ●", url=f"{SUPPORT_GROUP}"
+                                    )
         ],
     ]
     return buttons
