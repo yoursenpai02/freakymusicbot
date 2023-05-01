@@ -209,8 +209,8 @@ async def start_comm(client, message: Message, _):
         if config.START_IMG_URL:
             try:
               OMFOO = random.choice(PH_ON)
-                await message.reply_video(
-                    video=OMFOO,
+                await message.reply_photo(
+                    photo=OMFOO,
                     caption=_["start_8"].format(
                         config.MUSIC_BOT_NAME
                     ),
