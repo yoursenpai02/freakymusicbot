@@ -210,11 +210,11 @@ async def start_comm(client, message: Message, _):
                 )
     else:
         try:
-            await app.resolve_peer(OWNER_ID[0])
+            await bot.resolve_peer(OWNER_ID[0])
             OWNER = OWNER_ID[0]
         except:
             OWNER = None
-        out = private_panel(_, app.username, OWNER)
+        out = private_panel(_, bot.username, OWNER)
         if config.START_IMG_URL:
             try:
                 OMFOO = random.choice(PH_ON)
@@ -239,7 +239,7 @@ async def start_comm(client, message: Message, _):
         if await is_on_off(config.LOG):
             sender_id = message.from_user.id
             sender_name = message.from_user.first_name
-            return await app.send_message(
+            return await bot.send_message(
                 config.LOG_GROUP_ID,
                 f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ʏᴏᴜʀ ʙᴏᴛ.\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}",
             )
@@ -256,7 +256,7 @@ async def start_comm(client, message: Message, _):
 async def testbot(client, message: Message, _):
     OMFOO = random.choice(PH_ON)
     OWNER = OWNER_ID[0]
-    out = start_pannel(_, app.username, OWNER)
+    out = start_pannel(_, bot.username, OWNER)
     return await message.reply_photo(
                photo=config.START_IMG_URL,
                caption=_["start_1"].format(
